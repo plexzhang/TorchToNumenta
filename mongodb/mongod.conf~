@@ -1,0 +1,8 @@
+# mongod conf
+
+#where to log
+logpath=/Users/avi/Programming/GitHub/TorchToNumenta/mongodb/mongod.log
+logappend=true
+
+#path to database folder
+dbpath=/Applications/mongodb-osx-x86_64-3.0.3/bin

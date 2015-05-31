@@ -1,0 +1,45 @@
+2015-05-31T07:59:03.704-0400 I JOURNAL  [initandlisten] journal dir=/Applications/mongodb-osx-x86_64-3.0.3/bin/journal
+2015-05-31T07:59:03.704-0400 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-05-31T07:59:03.727-0400 I JOURNAL  [durability] Durability thread started
+2015-05-31T07:59:03.727-0400 I JOURNAL  [journal writer] Journal writer thread started
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] MongoDB starting : pid=28093 port=27017 dbpath=/Applications/mongodb-osx-x86_64-3.0.3/bin 64-bit host=dhcp-ccc-1005.wifi-visitor.cit.cornell.edu
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] 
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] 
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] db version v3.0.3
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] git version: b40106b36eecd1b4407eb1ad1af6bc60593c6105
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] build info: Darwin bs-osx108-7 12.5.0 Darwin Kernel Version 12.5.0: Sun Sep 29 13:33:47 PDT 2013; root:xnu-2050.48.12~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] allocator: system
+2015-05-31T07:59:03.727-0400 I CONTROL  [initandlisten] options: { config: "/Users/avi/Programming/GitHub/TorchToNumenta/mongodb/mongod.conf", storage: { dbPath: "/Applications/mongodb-osx-x86_64-3.0.3/bin" }, systemLog: { destination: "file", logAppend: true, path: "/Users/avi/Programming/GitHub/TorchToNumenta/mongodb/mongod.log" } }
+2015-05-31T07:59:03.729-0400 I INDEX    [initandlisten] allocating new ns file /Applications/mongodb-osx-x86_64-3.0.3/bin/local.ns, filling with zeroes...
+2015-05-31T07:59:03.776-0400 I STORAGE  [FileAllocator] allocating new datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/local.0, filling with zeroes...
+2015-05-31T07:59:03.776-0400 I STORAGE  [FileAllocator] creating directory /Applications/mongodb-osx-x86_64-3.0.3/bin/_tmp
+2015-05-31T07:59:03.995-0400 I STORAGE  [FileAllocator] done allocating datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/local.0, size: 64MB,  took 0.218 secs
+2015-05-31T07:59:04.046-0400 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-05-31T07:59:46.444-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57580 #1 (1 connection now open)
+2015-05-31T08:00:19.286-0400 I INDEX    [conn1] allocating new ns file /Applications/mongodb-osx-x86_64-3.0.3/bin/mydb.ns, filling with zeroes...
+2015-05-31T08:00:19.339-0400 I STORAGE  [FileAllocator] allocating new datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/mydb.0, filling with zeroes...
+2015-05-31T08:00:19.532-0400 I STORAGE  [FileAllocator] done allocating datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/mydb.0, size: 64MB,  took 0.193 secs
+2015-05-31T08:00:19.589-0400 I WRITE    [conn1] insert mydb.test query: { a: 1.0, _id: ObjectId('556af7d38375ffe0db56bab2') } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 38 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 302ms
+2015-05-31T08:00:19.590-0400 I COMMAND  [conn1] command mydb.$cmd command: insert { insert: "test", documents: [ { a: 1.0, _id: ObjectId('556af7d38375ffe0db56bab2') } ], ordered: true } keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 38 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 311ms
+2015-05-31T08:03:02.846-0400 I NETWORK  [conn1] end connection 127.0.0.1:57580 (0 connections now open)
+2015-05-31T08:03:06.056-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57691 #2 (1 connection now open)
+2015-05-31T08:03:15.325-0400 I NETWORK  [conn2] end connection 127.0.0.1:57691 (0 connections now open)
+2015-05-31T08:05:19.462-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57781 #3 (1 connection now open)
+2015-05-31T08:06:37.869-0400 I NETWORK  [conn3] end connection 127.0.0.1:57781 (0 connections now open)
+2015-05-31T08:06:37.869-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57826 #4 (2 connections now open)
+2015-05-31T08:06:41.611-0400 I NETWORK  [conn4] end connection 127.0.0.1:57826 (0 connections now open)
+2015-05-31T08:06:41.611-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57828 #5 (1 connection now open)
+2015-05-31T08:09:21.550-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57905 #6 (2 connections now open)
+2015-05-31T08:09:21.551-0400 I INDEX    [conn6] allocating new ns file /Applications/mongodb-osx-x86_64-3.0.3/bin/test-database.ns, filling with zeroes...
+2015-05-31T08:09:21.604-0400 I STORAGE  [FileAllocator] allocating new datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/test-database.0, filling with zeroes...
+2015-05-31T08:09:21.803-0400 I STORAGE  [FileAllocator] done allocating datafile /Applications/mongodb-osx-x86_64-3.0.3/bin/test-database.0, size: 64MB,  took 0.198 secs
+2015-05-31T08:09:21.850-0400 I WRITE    [conn6] insert test-database.posts query: { _id: ObjectId('556af9f153c8776ddc69db73'), text: "My first blog post!", tags: [ "mongodb", "python", "pymongo" ], author: "Mike" } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 40 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 300ms
+2015-05-31T08:09:21.850-0400 I COMMAND  [conn6] command test-database.$cmd command: insert { insert: "posts", ordered: true, documents: [ { _id: ObjectId('556af9f153c8776ddc69db73'), text: "My first blog post!", tags: [ "mongodb", "python", "pymongo" ], author: "Mike" } ] } keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 40 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 300ms
+2015-05-31T08:28:29.499-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58909 #7 (3 connections now open)
+2015-05-31T08:28:29.508-0400 I NETWORK  [conn7] end connection 127.0.0.1:58909 (2 connections now open)
+2015-05-31T08:46:58.814-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59702 #8 (3 connections now open)
+2015-05-31T08:46:58.816-0400 I NETWORK  [conn8] end connection 127.0.0.1:59702 (2 connections now open)
+2015-05-31T08:48:43.907-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59755 #9 (3 connections now open)
+2015-05-31T08:48:43.924-0400 I NETWORK  [conn9] end connection 127.0.0.1:59755 (2 connections now open)
